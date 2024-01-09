@@ -7,29 +7,26 @@
     <title>Calculator</title>
   </head>
   <body>
-    <div class="calculator-grid">
-      <div class="display">
-        <div class="previous-operand" id="previous"></div>
-        <div class="current-operand" id="current"></div>
-      </div>
-      <button class="span-two">AC</button>
-      <button>DEL</button>
-      <button>÷</button>
-      <button>1</button>
-      <button>2</button>
-      <button>3</button>
-      <button>*</button>
-      <button>4</button>
-      <button>5</button>
-      <button>6</button>
-      <button>+</button>
-      <button>7</button>
-      <button>8</button>
-      <button>9</button>
-      <button>-</button>
-      <button>.</button>
-      <button>0</button>
-      <button class="span-two">=</button>
+    <div class="calculator-grid" id="calculator">
+      <input class="display" id="display" readonly>
+      <button class="span-two" onclick="clearDisplay()">AC</button>
+      <button onclick="deleteSymbol()">DEL</button>
+      <button onclick="appendToDisplay('+')">÷</button>
+      <button onclick="appendToDisplay('1')">1</button>
+      <button onclick="appendToDisplay('2')">2</button>
+      <button onclick="appendToDisplay('3')">3</button>
+      <button onclick="appendToDisplay('*')">*</button>
+      <button onclick="appendToDisplay('4')">4</button>
+      <button onclick="appendToDisplay('5')">5</button>
+      <button onclick="appendToDisplay('6')">6</button>
+      <button onclick="appendToDisplay('+')">+</button>
+      <button onclick="appendToDisplay('7')">7</button>
+      <button onclick="appendToDisplay('8')">8</button>
+      <button onclick="appendToDisplay('9')">9</button>
+      <button onclick="appendToDisplay('-')">-</button>
+      <button onclick="appendToDisplay('.')">.</button>
+      <button onclick="appendToDisplay('0')">0</button>
+      <button class="span-two" onclick="calculate()">=</button>
     </div>
     <script src="script.js"></script>
   </body>

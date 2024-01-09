@@ -23,9 +23,12 @@ body {
   font-size: 2rem;
   border: 1px solid white;
   outline: none;
-  background: rgb(255, 255, 255, .75);
+  background: rgb(255, 255, 255, .55);
 }
 .calculator-grid > button:hover {
+  background: rgb(255, 255, 255, .7);
+}
+.calculator-grid > button:active {
   background: rgb(255, 255, 255, .9);
 }
 
@@ -43,12 +46,4 @@ body {
   padding: 10px;
   word-wrap: break-word;
   word-break: break-all;
-}
-.display .previous-operand {
-  color: rgba(255, 255, 255, .75);
-  font-size: 1.5rem;
-}
-.display .current-operand {
-  color: white;
-  font-size: 2.5rem;
 }
